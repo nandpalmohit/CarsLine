@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CarsLine - Maruti Swift</title>
+	<meta charset="utf-8">
+	<meta name="HandeledFriendly" content="true">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="keyword" content="car,cars details,indiancars,carsline">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="India's best website for cars">
+	<link rel="stylesheet" href="/style.css">
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Monoton&family=Poppins:wght@200;300;400;500;600;700&&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="fstNav" id="fstNav">
+		<h3>CarsLine</h3>
+		<div class="searchNav">
+			<input type="search" class="searchInp" name="searchCars" placeholder="Search Your Cars">
+			<button type="" class="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>	
+		</div>
+		<button type="submit" class="menuBtn" id="openMenu" onclick="openMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	</nav>
+	<!-- menunavbar -->
+	<nav class="menuNav" id="menuNav">
+		<a href="/" title="" class="active">Home</a>
+		<a href="" title="">Cars</a>
+		<a href="" title="">About Us</a>
+		<a href="" title="">Contact Us</a>
+		<a href="" title="">Feedback</a>
+		<a href="" title="">News</a>
+		<a href="" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	</nav>
+	<div class="breadcrumb">
+		<a href="/index.html" title="">Home</a>
+		<i class="fa fa-angle-right"></i>
+		<a href="/cars/" title="">All Cars</a>
+		<i class="fa fa-angle-right"></i>
+		<a href="/cars/cmp/" title="">Compare Cars</a>
+		<i class="fa fa-angle-right"></i>
+		<a href="/cars/cmp/i20-vs-altroz/" title="">i20 vs Altroz</a>	
+	</div>
+	<!-- linkbar -->
+	<nav class="linkbar">
+		<a href="#overview">Overview</a>
+		<a href="#variants">Variants</a>
+		<a href="#specs">Specification</a>
+		<a href="#color">Colors</a>
+	</nav>
+	<!-- compare content -->
+	<main class="cmp-cars">
+		<!-- banner -->
+		<h1>Hyundai i20 vs Tata Altroz Comparison</h1>
+		<!-- overview -->
+		<section class="cmp-banner" id="overview">
+			<!-- adv hyundai -->
+			<div class="adv-cars">
+				<img src="/assets/adv/hyundaivr2.jpg">
+			</div>
+			<div class="cars-banner">
+				<img src="/assets/models/i20.jpg">
+				<h1>Hyundai i20</h1>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<a href="" title=""> 200 reviews | 78 Ratings</a>
+				</div>
+				<h2 class="car-price"><i class="fa fa-inr" aria-hidden="true"></i> 6.79 Lakh - 11.32 Lakh*</h2>
+				<span class="car-span">*Ex-Showroom price in Ahmedabad</span>
+				<p class="selling"><i class="fa fa-superpowers" aria-hidden="true"></i> 9,096 Selling in November.</p>
+			</div> 
+			<div class="cars-banner">
+				<img src="/assets/models/altroz.jpeg">
+				<h1>Tata Altroz</h1>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<a href="" title=""> 200 reviews | 78 Ratings</a>
+				</div>
+				<h2 class="car-price"><i class="fa fa-inr" aria-hidden="true"></i> 5.44 Lakh - 8.95 Lakh*</h2>
+				<span class="car-span">*Ex-Showroom price in Ahmedabad</span>
+				<p class="selling"><i class="fa fa-superpowers" aria-hidden="true"></i> 18498 Selling in November.</p>
+			</div>
+			<!-- adv tata -->
+			<div class="adv-cars">
+				<img src="/assets/adv/nexonvr.jpg">
+			</div>
+		</section>
+		<section class="cmp-table">
+			<h1>Hyundai i20 vs Tata Altroz</h1>
+			<p>Should you buy Hyundai i20 or Tata Altroz? CarsLine Find out which car is best for you - compare the two models on the basis of their Price, Size, Space, Boot Space, Service cost, Mileage, Features, Colours and other specs. Hyundai i20 price starts at Rs 6.79 Lakh ex-showroom for Magna (Petrol) and Tata Altroz price starts Rs 5.44 Lakh ex-showroom for XE (Petrol). i20 has 1493 cc (Diesel top model) engine, while Altroz has 1497 cc (Diesel top model) engine. As far as mileage is concerned, the i20 has a mileage of 25.2 kmpl (Diesel top model) and the Altroz has a mileage of 21.11 kmpl (Diesel top model).</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Key Highlights</th>
+						<th>
+							Hyundai i20
+							<select class="tabs" id="car-tabs">
+							    <option><a href="openVariant(event,'Sports')">Sports Petrol</a></option>
+							  	<option><a href="openVariant(event,'Magna')">Magna Petrol</a></option>
+							    <option><a href="openVariant(event,'Asta')">Asta Petrol</a></option>
+							    <option><a href="openVariant(event,'Astao')">Asta(O) Petrol</a></option>
+							 </select>
+						</th>
+						<th>
+							Tata Altroz
+							<select class="tabs" id="car-tabs">
+							    <option><a href="openVariant(event,'XZ')">XZ Petrol</a></option>
+							    <option><a href="openVariant(event,'XT')">XT Petrol</a></option>
+							   	<option><a href="openVariant(event,'XE')">XE Petrol</a></option>
+							    <option><a href="openVariant(event,'XM')">XM Petrol</a></option>
+							</select>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>On Road Price</td>
+						<td>₹ 8.65 Lakh</td>
+						<td>₹ 8.63 Lakh</td>
+					</tr>
+					<tr>
+						<td>Engine Capacity</td>
+						<td>1197 cc</td>
+						<td>1199 cc</td>
+					</tr>
+					<tr>
+						<td>Power</td>
+						<td>82 bhp</td>
+						<td>85 bhp</td>
+					</tr>
+					<tr>
+						<td>Transmission</td>
+						<td>Manual</td>
+						<td>Manual</td>
+					</tr>
+					<tr>
+						<td>Fuel Type</td>
+						<td>Petrol</td>
+						<td>Petrol</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+		<!-- variants -->
+		<section class="table-section" id="variant">
+			<table>
+				<caption>Hyundai i20 Petrol Variants</caption>
+				<tbody>
+					<tr>
+						<td class="title">Magna 1.2 MT Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1197cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 7.60 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Sportz 1.2 MT</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1197cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 8.46 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Sportz 1.2 IVT</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1197cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i>Automatic</td>
+						<td class="data">₹ 9.59 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Sportz 1.0 Turbo IMT</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 998cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Clutchless Manual</td>
+						<td class="data">₹ 9.74Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Asta 1.2 MT</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1197cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 9.70 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Asta(O) 1.2 MT</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1197cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 10.24 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Asta 1.2 IVT</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1197cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Automatic</td>
+						<td class="data">₹ 10.79 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Asta 1.0 Turbo IMT</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 998cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Clutchless Manual</td>
+						<td class="data">₹ 10.94 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Asta 1.0 Turbo DCT</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 998cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Dual Clutch</td>
+						<td class="data">₹ 11.86 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Asta(O) 1.0 Turbo DCT</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 998cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Dual Clutch</td>
+						<td class="data">₹ 12.42 Lakh</td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<caption>Tata Altroz Petrol Variants</caption>
+				<tbody>
+					<tr>
+						<td class="title">Altroz XE Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1199cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 6.22 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Altroz XE Rhytm Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1199cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 6.51 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Altroz XM Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1199cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i>Manual</td>
+						<td class="data">₹ 7.17 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Altroz XM Rhytm Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1199cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i>  Manual</td>
+						<td class="data">₹ 7.61 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Altroz XT Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1199cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 7.94 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Altroz XT Luxe Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1199cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 8.37 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Altroz XZ Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1199cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 8.60 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Altroz XZ (O) Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1199cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 8.78 Lakh</td>
+					</tr>
+					<tr>
+						<td class="title">Altroz XZ Urban Petrol</td>
+						<td class="title"><i class="fa fa-bolt" aria-hidden="true"></i> 1199cc</td>
+						<td class="title"><i class="fa fa-cogs" aria-hidden="true"></i> Manual</td>
+						<td class="data">₹ 8.93 Lakh</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<!-- adv amaze -->
+		<div class="adv-cars">
+			<img src="/assets/adv/amaze.jpeg" width="100%">
+		</div>
+		<!-- specs -->
+		<section class="cmp-table" id="specs">
+			<table>
+				<caption>Engine and Transmission</caption>
+				<thead>
+					<tr>
+						<th>Key Highlights</th>
+						<th>
+							Hyundai i20
+							<select class="tabs" id="car-tabs">
+							    <option><a href="openVariant(event,'Sports')">Sports Petrol</a></option>
+							  	<option><a href="openVariant(event,'Magna')">Magna Petrol</a></option>
+							    <option><a href="openVariant(event,'Asta')">Asta Petrol</a></option>
+							    <option><a href="openVariant(event,'Astao')">Asta(O) Petrol</a></option>
+							 </select>
+						</th>
+						<th>
+							Tata Altroz
+							<select class="tabs" id="car-tabs">
+							    <option><a href="openVariant(event,'XZ')">XZ Petrol</a></option>
+							    <option><a href="openVariant(event,'XT')">XT Petrol</a></option>
+							   	<option><a href="openVariant(event,'XE')">XE Petrol</a></option>
+							    <option><a href="openVariant(event,'XM')">XM Petrol</a></option>
+							</select>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Engine</td>
+						<td>1197 cc, 4 Cylinders Inline, 4 Valves/Cylinder, DOHC</td>
+						<td>1199 cc, 3 Cylinders Inline, 4 Valves/Cylinder, DOHC</td>
+					</tr>
+					<tr>
+						<td>Engine Type</td>
+						<td>1.2 Litre Kappa</td>
+						<td>1.2 Litre Revotron</td>
+					</tr>
+					<tr>
+						<td>Fuel Type</td>
+						<td>Petrol</td>
+						<td>Petrol</td>
+					</tr>
+					<tr>
+						<td>Max Power (bhp@rpm)</td>
+						<td>82 bhp @ 6000 rpm</td>
+						<td>85 bhp @ 6000 rpm</td>
+					</tr>
+					<tr>
+						<td>Max Torque (Nm@rpm)</td>
+						<td>115 Nm @ 4200 rpm</td>
+						<td>112 Nm @ 3300 rpm</td>
+					</tr>
+					<tr>
+						<td>Mileage</td>
+						<td>20.35 KMPL</td>
+						<td>19.05 KMPL</td>
+					</tr>
+					<tr>
+						<td>Transmission</td>
+						<td>BS 6</td>
+						<td>BS 6</td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<caption>Dimensions & Weight</caption>
+				<tbody>
+					<tr>
+						<td>Length</td>
+						<td>3995</td>
+						<td>3990</td>
+					</tr>
+					<tr>
+						<td>Width</td>
+						<td>1775</td>
+						<td>1775</td>
+					</tr>
+					<tr>
+						<td>Height</td>
+						<td>1505</td>
+						<td>1523</td>
+					</tr>
+					<tr>
+						<td>Ground Clearance</td>
+						<td>170</td>
+						<td>165</td>
+					</tr>
+					<tr>
+						<td>Wheel</td>
+						<td>Steel Rims</td>
+						<td>Alloy Wheels</td>
+					</tr>
+					<tr>
+						<td>Tyre Type</td>
+						<td>195 / 55 R16</td>
+						<td>195 / 55 R16</td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<caption>Capacity</caption>
+				<tbody>
+					<tr>
+						<td>Door</td>
+						<td>5</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td>Seating Capacity</td>
+						<td>5</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td>Bootspace</td>
+						<td>311 L</td>
+						<td>345 L</td>
+					</tr>
+					<tr>
+						<td>Fuel Tank</td>
+						<td>37 L</td>
+						<td>37 L</td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<caption>Exterior</caption>
+				<tbody>
+					<tr>
+						<td>Roof Mounted Antenna</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td>Body-Coloured Bumpers</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td>Fog Lights (Helogen)</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td>Automatic Head Lamps</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td>Headlight Height Adjuster</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td>TailLight</td>
+						<td>LED</td>
+						<td>Halogen</td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<caption>Entertainment</caption>
+				<tbody>
+					<tr>
+						<td>Smart Connectivity (Android Auto, Apple Car Play)</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td>Integrated Music System</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td>Display (Touch-Screen)</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td>GPS Navigation System</td>
+						<td><i class="fa fa-remove" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+					<tr>
+						<td>Speakers</td>
+						<td>6</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>TailLight</td>
+						<td>LED</td>
+						<td>Halogen</td>
+					</tr>
+					<tr>
+						<td>USB / Bluetooth / AUX</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+					</tr>
+				</tbody>
+			</table>
+			<table>
+				<caption>Warranty</caption>
+				<tbody>
+					<tr>
+						<td>Warranty (Years)</td>
+						<td>3</i></td>
+						<td>3</i></td>
+					</tr>
+					<tr>
+						<td>Warranty (Kilometer)</td>
+						<td>1,00,000</i></td>
+						<td>75,000</i></td>
+					</tr>
+					<tr>
+						<td>Warranty (Years)</td>
+						<td>3</i></td>
+						<td>3</i></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<!-- adv i20 -->
+		<div class="adv-cars">
+			<img src="/assets/adv/aura.jpg" width="100%">
+		</div>
+		<!-- colors -->
+		<div class="car-colors" id="color">
+			<div class="badge-color">
+				<div class="badge" onclick="openTab(event, 'metal-i20')" style="background-color: #644a49"  id="defaultOpen"></div>
+				<div class="badge" onclick="openTab(event, 'red-i20')" style="background-color: #9f1515"  id="defaultOpen"></div>
+				<div class="badge" onclick="openTab(event, 'darkblue-i20')" style="background-color: #222945"  id="defaultOpen"></div>
+				<div class="badge" onclick="openTab(event, 'grey-i20')" style="background-color: #4f5459"  id="defaultOpen"></div>
+				<div class="badge" onclick="openTab(event, 'silver-i20')" style="background-color: #e0e2e4"  id="defaultOpen"></div>
+				<div class="badge" onclick="openTab(event, 'blackandwhite-i20')" style="background: linear-gradient(to bottom, #000 50%, #f2f2f2 0%);"  id="defaultOpen"></div>
+				<div class="badge" onclick="openTab(event, 'blackandred-i20')" style="background: linear-gradient(to bottom, #000 50%, red 0%);"></div>
+				<div class="badge" style="background-color: #fff"></div>
+				<div class="badge" onclick="openTab(event, 'gold-altroz')" style="background-color: #bda452"></div>
+				<div class="badge" onclick="openTab(event, 'grey-altroz')" style="background-color: #212224"></div>
+				<div class="badge" onclick="openTab(event, 'red-altroz')" style="background-color: #aa0406"></div>
+				<div class="badge" onclick="openTab(event, 'silver-altroz')" style="background-color: #666d77"></div>
+				<div class="badge" onclick="openTab(event, 'white-altroz')" style="background-color: #e7e7e7"></div>
+			</div>
+			<div class="box-color" id="gold-altroz">
+				<h4>High Street Gold</h4>
+				<img src="/assets/cars/altroz/gold.png">
+			</div>
+			<div class="box-color" id="grey-altroz">
+				<h4>Midtown Grey</h4>
+				<img src="/assets/cars/altroz/grey.png">
+			</div>
+			<div class="box-color" id="red-altroz">
+				<h4>Downtown Red</h4>
+				<img src="/assets/cars/altroz/red.png">
+			</div>
+			<div class="box-color" id="silver-altroz">
+				<h4>Skyline Silver</h4>
+				<img src="/assets/cars/altroz/silver.png">
+			</div>
+			<div class="box-color" id="white-altroz">
+				<h4>Avenue White</h4>
+				<img src="/assets/cars/altroz/white.png">
+			</div>
+			<!-- i20 colors -->
+			<div class="box-color" id="metal-i20">
+				<h4>Metallic Copper</h4>
+				<img src="/assets/cars/i20/metal.png" class="full">
+			</div>
+			<div class="box-color" id="red-i20">
+				<h4>Fiery Red</h4>
+				<img src="/assets/cars/i20/red.png" class="full">
+			</div>
+			<div class="box-color" id="darkblue-i20">
+				<h4>Starry Night</h4>
+				<img src="/assets/cars/i20/darkblue.png" class="full">
+			</div>
+			<div class="box-color" id="grey-i20">
+				<h4>Titan Grey</h4>
+				<img src="/assets/cars/i20/grey.png" class="full">
+			</div>
+			<div class="box-color" id="silver-i20">
+				<h4>Typhoon Silver</h4>
+				<img src="/assets/cars/i20/silver.png" class="full">
+			</div>
+			<div class="box-color" id="blackandwhite-i20">
+				<h4>Polar White with Phantom Black Roof</h4>
+				<img src="/assets/cars/i20/dualblackwhite.png" class="full">
+			</div>
+			<div class="box-color" id="blackandred-i20">
+				<h4>Fiery Red Dual Tone</h4>
+				<img src="/assets/cars/i20/dualblackred.png" class="full">
+			</div>
+		</div>
+	</main>
+	<!-- compare others -->
+	<main class="maincontent">
+		<div class="panel">
+			<h3>Compare Best Cars</h3>
+			<div class="cmpcontent">
+				<div class="cmp-cards">
+					<div class="left-cmp">
+						<img src="/assets/models/magnite.jpg" alt="">
+						<div class="card-data">
+							<a href="">Nissan Magnite</a>
+							<h4><i class="fa fa-inr" aria-hidden="true"></i> 4.99 - 9.97 Lakh*</h4>
+							<span class="card-para">*Ex-showroom price in Ahmedabad</span>
+						</div>
+					</div>
+					<div class="right-cmp">
+						<img src="/assets/models/baleno.jpg" alt="">
+						<div class="card-data">
+							<a href="">Maruti Baleno</a>
+							<h4><i class="fa fa-inr" aria-hidden="true"></i> 5.70 - 9.03 Lakh*</h4>
+							<span class="card-para">*Ex-showroom price in Ahmedabad</span>
+						</div>
+					</div>
+				</div>
+				<div class="cmp-cards">
+					<div class="left-cmp">
+						<img src="/assets/models/venue.jpg" alt="">
+						<div class="card-data">
+							<a href="">Hyundai Venue</a>
+							<h4><i class="fa fa-inr" aria-hidden="true"></i> 6.75 - 11.65 Lakh*</h4>
+							<span class="card-para">*Ex-showroom price in Ahmedabad</span>
+						</div>
+					</div>
+					<div class="right-cmp">
+						<img src="/assets/models/nexon.jpg" alt="">
+						<div class="card-data">
+							<a href="">Tata Nexon</a>
+							<h4><i class="fa fa-inr" aria-hidden="true"></i> 6.99 - 12.70 Lakh*</h4>
+							<span class="card-para">*Ex-showroom price in Ahmedabad</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- adv thar -->
+	<div class="adv-cars">
+		<img src="/assets/adv/thar.webp" width="100%">
+	</div>
+	<!-- subscribe content -->
+	<main class="maincontent">
+		<div class="panel">
+			<div class="sub-content">
+				<h1>Find The Best Car for You</h1>
+				<span>We are here to give you perfect reviews and price and range for your cars.</span>
+				<div class="subscribe">
+					<input type="email" name="" value="" placeholder="example@gmail.com">
+					<button type="submit" class="subBtn">Subscribe Us</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- service -->
+	<div class="service-content">
+		<div class="service-data">
+			<img src="https://img.icons8.com/bubbles/50/000000/male-student-messaging.png"/>
+			<h2>24*7 Help Center</h2>
+		</div>
+		<div class="service-data">
+			<img src="https://img.icons8.com/bubbles/50/000000/verified-account.png"/>
+			<h2>Verified Reviews and Ratings</h2>
+		</div>
+		<div class="service-data">
+			<img src="https://img.icons8.com/bubbles/50/000000/car.png"/>
+			<h2>India's Largest Portal</h2>
+		</div>
+		<div class="service-data">
+			<img src="https://img.icons8.com/bubbles/50/000000/discount.png"/>
+			<h2>Top Offers For You</h2>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="content">
+		<div class="data">
+			<h3>CarsLine</h3>
+			<p>India's #1 and largest portal of auto car vehicle. We give you the <br> best reviews and rates for your cars.We believe brand interaction <br> is key in commu- nication. Real innovations and a positive <br> customer experience are the heart of successful communication.</p>
+		</div>
+		<div class="link">
+			<h3>Links</h3>
+			<a href="" title="">Home</a>
+			<a href="" title="">About Us</a>
+			<a href="" title="">Cars</a>
+			<a href="" title="">Contact Us</a>
+			<a href="" title="">News</a>
+		</div>
+		<div class="service">
+			<h3>Services</h3>
+			<a href="" title="">Brands</a>
+			<a href="" title="">Compare Cars</a>
+			<a href="" title="">Top Selling Cars</a>
+			<a href="" title="">Top Luxury Cars</a>
+		</div>
+		<div class="detail">
+			<h3>Contact Us</h3>
+			<a href="" title="">emailid@gmail.com</a>
+			<a href="" title="">+91 9876543210</a>
+			<a href="" title="">Carsline.com</a>
+		</div>
+		<a href="https://nandpalmohit.github.io/nmportfolio/" class="copyright">&copy; CarsLine 2020 All rights reserved. Powered with <span><i class="fa fa-heart" aria-hidden="true"></i></span> by Nandpal Mohit.</a>
+	</footer>
+
+
+	<!-- script -->
+	<script type="text/javascript">
+		function openMenu() {
+		  	var x = document.getElementById("menuNav");
+		  	var y = document.getElementById("fstNav")
+		  	if (x.className === "menuNav") {
+		    	x.className += " active";
+		    	y.style.boxShadow = 'none';
+
+		  	} else {
+		    	x.className = "menuNav";
+		    	y.style.boxShadow = '0 0.5rem 1rem rgba(0,0,0,0.05)';
+		  	}
+		}
+	</script>
+	<!-- colors tab -->
+	<script type="text/javascript">
+		function openTab(event, tagName) {
+		  	var i, tabcontent, tablinks;
+		  	tabcontent = document.getElementsByClassName("box-color");
+		  	for (i = 0; i < tabcontent.length; i++) {
+		    	tabcontent[i].style.display = "none";
+		    	// tabcontent[i].style.background = "transparent";
+		  	}
+		  	tablinks = document.getElementsByClassName("badge");
+		  	for (i = 0; i < tablinks.length; i++) {
+		    	tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  	}
+		  	document.getElementById(tagName).style.display = "block";
+
+		  	event.currentTarget.className += " active";
+
+			}
+			document.getElementById("defaultOpen").click();
+	</script>
+</body>
+</html>
