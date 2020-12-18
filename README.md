@@ -13,7 +13,7 @@ Carsline is an online auto vehicle portal which is used for real world portal wi
 - Comparision of Cars
 
 
-### Created by [Mohit Nandpal!](https://nandpalmohit.github.io) in 2020.
+### Created by [Mohit Nandpal](https://nandpalmohit.github.io) in 2020.
 <a href="https://twitter.com/nandpalmohit99">
   <img align="left" alt="Nandpal Mohit | Twitter" width="26px" src="https://github.com/nandpalmohit/nandpalmohit/blob/main/assets/twitter.png" />
 </a>
