@@ -108,7 +108,7 @@ nav.menuNav{
 }
 /* header */
 header.banner{
-	background: url(/assets/banner.jpg);
+	background: url(/carsline/assets/banner.jpg);
 	background-attachment: fixed;
 	height: 91vh;
 	background-size: cover;
@@ -1133,7 +1133,7 @@ hr{
 	header.banner{
 		height: 100vh;
 		background-size: cover;
-		background: url(/assets/bannermobile.jpg);
+		background: url(/carsline/assets/bannermobile.jpg);
 	}
 	.banner .title{
 		height: 100vh;
